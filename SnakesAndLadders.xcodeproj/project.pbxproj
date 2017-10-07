@@ -29,6 +29,7 @@
 		01DDD1841F88518100FC12C9 /* general_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = general_defines.h; sourceTree = "<group>"; };
 		01DDD1851F88519400FC12C9 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 		01DDD1861F88519400FC12C9 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
+		01DDD1891F8853CD00FC12C9 /* SnakesAndLadders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnakesAndLadders-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +66,17 @@
 				01DDD1851F88519400FC12C9 /* InputCollector.h */,
 				01DDD1861F88519400FC12C9 /* InputCollector.m */,
 				01DDD1841F88518100FC12C9 /* general_defines.h */,
+				01DDD18A1F8853E700FC12C9 /* Supporting Files */,
 			);
 			path = SnakesAndLadders;
+			sourceTree = "<group>";
+		};
+		01DDD18A1F8853E700FC12C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01DDD1891F8853CD00FC12C9 /* SnakesAndLadders-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 48KFD7RJD2;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/SnakesAndLadders-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -236,6 +247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 48KFD7RJD2;
+				GCC_PREFIX_HEADER = "$(PROJECT_NAME)/SnakesAndLadders-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

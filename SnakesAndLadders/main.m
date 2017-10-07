@@ -7,15 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InputCollector.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
+        InputCollector *myInputCollector = [[InputCollector alloc] init];
+        
+        
         // insert code here...
         NSLog(@"Hello, World!");
         BOOL gameOn = true;
         
+        
+        
+        
+        NSString *userInput;
+        
+        
+        
         while (gameOn) {
+            userInput = [myInputCollector inputForPrompt:@"Enter command: "];
             
+            if ([userInput isEqualToString:@"h"]) {
+                [myInputCollector printHistory];
+            }
         }
         
         

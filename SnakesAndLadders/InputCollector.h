@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "general_defines.h"
+
 @interface InputCollector : NSObject
     
     @property NSString* userInput;
