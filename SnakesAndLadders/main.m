@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "InputCollector.h"
+#import "Player.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,7 +19,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
         BOOL gameOn = true;
-        
+        Player *p1 = [[Player alloc] init];
         
         
         
@@ -31,6 +32,9 @@ int main(int argc, const char * argv[]) {
             
             if ([userInput isEqualToString:@"h"]) {
                 [myInputCollector printHistory];
+            }
+            else if ([userInput isEqualToString:@"r"]) {
+                [p1 roll];
             }
         }
         
