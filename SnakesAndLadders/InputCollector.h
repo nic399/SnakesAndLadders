@@ -16,5 +16,6 @@
 
 -(NSString*) inputForPrompt: (NSString *) promptString;
 -(void) printHistory;
+-(NSString *) caseInsensitiveInputForPrompt: (NSString *) userInput;
 
 @end

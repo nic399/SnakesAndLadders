@@ -18,7 +18,15 @@
         }
         return self;
     }
-    
+
+
+-(NSString *)caseInsensitiveInputForPrompt:(NSString *)userInput {
+    NSString *returnStr = [self inputForPrompt:userInput];
+    returnStr = [returnStr lowercaseString];
+    return returnStr;
+}
+
+
     -(NSString*) inputForPrompt:(NSString *)promptString {
         NSLog(@"%@", promptString);
         
