@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface InputCollector : NSObject
-    
-    @property NSString* userInput;
-    @property NSMutableArray* history;
-    @property int newest;
-    @property int numOfHistoryItemsToShow;
-    
-    -(NSString*) inputForPrompt: (NSString *) promptString;
-    -(void) printHistory;
+
+@property (nonatomic, strong,readwrite) NSString* userInput;
+@property (nonatomic, strong, readwrite) NSMutableArray* history;
+@property (nonatomic, assign, readonly) int numOfHistoryItemsToShow;
+
+-(NSString*) inputForPrompt: (NSString *) promptString;
+-(void) printHistory;
 
 @end

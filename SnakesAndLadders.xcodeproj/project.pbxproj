@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01DDD17E1F88404100FC12C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD17D1F88404100FC12C9 /* main.m */; };
 		01DDD1871F88519400FC12C9 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD1861F88519400FC12C9 /* InputCollector.m */; };
+		01DDD18D1F885E3100FC12C9 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD18C1F885E3100FC12C9 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		01DDD1851F88519400FC12C9 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 		01DDD1861F88519400FC12C9 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
 		01DDD1891F8853CD00FC12C9 /* SnakesAndLadders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnakesAndLadders-Prefix.pch"; sourceTree = "<group>"; };
+		01DDD18B1F885E3100FC12C9 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		01DDD18C1F885E3100FC12C9 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				01DDD17D1F88404100FC12C9 /* main.m */,
+				01DDD18B1F885E3100FC12C9 /* Player.h */,
+				01DDD18C1F885E3100FC12C9 /* Player.m */,
 				01DDD1851F88519400FC12C9 /* InputCollector.h */,
 				01DDD1861F88519400FC12C9 /* InputCollector.m */,
 				01DDD1841F88518100FC12C9 /* general_defines.h */,
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DDD1871F88519400FC12C9 /* InputCollector.m in Sources */,
+				01DDD18D1F885E3100FC12C9 /* Player.m in Sources */,
 				01DDD17E1F88404100FC12C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,9 +13,8 @@
     -(instancetype)init {
         self = [super init];
         if (self) {
-            self.history = [[NSMutableArray alloc] initWithObjects:@"No history", nil];
-            self.newest = 2;
-            self.numOfHistoryItemsToShow = 3;
+            self.history = [[NSMutableArray alloc] initWithObjects:@"Application Opened", nil];
+            _numOfHistoryItemsToShow = 10;
         }
         return self;
     }
@@ -27,24 +26,19 @@
         fgets(inputChar, 511, stdin);
         self.userInput =    [[NSString stringWithCString:inputChar encoding:NSUTF8StringEncoding] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         
-        self.newest = (self.newest+1)%self.numOfHistoryItemsToShow;
-        //[self.history replaceObjectAtIndex:self.newest withObject:self.userInput];
         if ([self.history count] > self.numOfHistoryItemsToShow) {
             [self.history removeLastObject];
         }
         [self.history insertObject:self.userInput atIndex:0];
-        //[self.history insertObject:self.userInput atIndex:self.newest];
         return self.userInput;
     }
     
     -(void) printHistory {
-        int oldest= (self.newest+1)%self.numOfHistoryItemsToShow;
-        for (int i = 0; i < self.numOfHistoryItemsToShow; i++) {
-            NSLog(@"%@", self.history[oldest]);
-            oldest = (oldest+1)%self.numOfHistoryItemsToShow;
-        }
         for (NSString *str in self.history) {
-            NSLog(@"%@",str);
+            NSLog(@">  %@",str);
+            if ([str isEqualToString:@"Application Opened"]) {
+                break;
+            }
         }
     }
     
