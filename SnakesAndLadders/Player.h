@@ -13,6 +13,7 @@
 @property (nonatomic, strong, readwrite) NSString *name;
 @property (nonatomic, assign, readwrite) int currentSquare;
 
--(int)roll;
+-(instancetype)initWithName:(NSString *)name;
+-(int)rollDie;
 
 @end

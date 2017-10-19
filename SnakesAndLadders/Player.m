@@ -10,22 +10,22 @@
 
 @implementation Player
 
--(instancetype)init{
+-(instancetype)initWithName:(NSString *)name {
     self = [super init];
     if (self) {
-        _name = @"playerName";
         _currentSquare = 0;
+        _name = name;
     }
     return self;
 }
 
--(int)roll{
+-(int)rollDie{
     int rolledNum = arc4random_uniform(6)+1;
     NSLog(@"Player %@ is currently on square %d", self.name, self.currentSquare);
     NSLog(@"Rolled a %d", rolledNum);
     self.currentSquare +=rolledNum;
     NSLog(@"Player %@ is now on square %d", self.name, self.currentSquare);
-    return rolledNum;
+    return self.currentSquare;
 }
 
 

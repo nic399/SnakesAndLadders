@@ -10,6 +10,8 @@
 		01DDD17E1F88404100FC12C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD17D1F88404100FC12C9 /* main.m */; };
 		01DDD1871F88519400FC12C9 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD1861F88519400FC12C9 /* InputCollector.m */; };
 		01DDD18D1F885E3100FC12C9 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD18C1F885E3100FC12C9 /* Player.m */; };
+		01DDD1961F8BCCC700FC12C9 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD1951F8BCCC700FC12C9 /* PlayerManager.m */; };
+		01DDD1991F8BD31800FC12C9 /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD1981F8BD31800FC12C9 /* GameBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,10 @@
 		01DDD1891F8853CD00FC12C9 /* SnakesAndLadders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnakesAndLadders-Prefix.pch"; sourceTree = "<group>"; };
 		01DDD18B1F885E3100FC12C9 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		01DDD18C1F885E3100FC12C9 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		01DDD1941F8BCCC700FC12C9 /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		01DDD1951F8BCCC700FC12C9 /* PlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
+		01DDD1971F8BD31800FC12C9 /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoard.h; sourceTree = "<group>"; };
+		01DDD1981F8BD31800FC12C9 /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				01DDD17D1F88404100FC12C9 /* main.m */,
+				01DDD1971F8BD31800FC12C9 /* GameBoard.h */,
+				01DDD1981F8BD31800FC12C9 /* GameBoard.m */,
 				01DDD18B1F885E3100FC12C9 /* Player.h */,
 				01DDD18C1F885E3100FC12C9 /* Player.m */,
+				01DDD1941F8BCCC700FC12C9 /* PlayerManager.h */,
+				01DDD1951F8BCCC700FC12C9 /* PlayerManager.m */,
 				01DDD1851F88519400FC12C9 /* InputCollector.h */,
 				01DDD1861F88519400FC12C9 /* InputCollector.m */,
 				01DDD1841F88518100FC12C9 /* general_defines.h */,
@@ -144,6 +154,8 @@
 			files = (
 				01DDD1871F88519400FC12C9 /* InputCollector.m in Sources */,
 				01DDD18D1F885E3100FC12C9 /* Player.m in Sources */,
+				01DDD1991F8BD31800FC12C9 /* GameBoard.m in Sources */,
+				01DDD1961F8BCCC700FC12C9 /* PlayerManager.m in Sources */,
 				01DDD17E1F88404100FC12C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +289,7 @@
 				01DDD1831F88404100FC12C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
